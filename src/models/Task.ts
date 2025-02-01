@@ -4,7 +4,6 @@ export interface ITask extends Document {
     id: string;
     name: string;
     description: string;
-    date_time: Date;
     next_execute_date_time: Date;
     status: string;
     userId: mongoose.Types.ObjectId;
@@ -15,7 +14,6 @@ const taskSchema: Schema = new Schema(
     {
         name: { type: String, required: true },
         description: { type: String, required: true },
-        date_time: { type: Date, required: true},
         next_execute_date_time: { type: Date},
         status: { type: String, default: 'pending' },
         userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },

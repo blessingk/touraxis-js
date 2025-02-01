@@ -1,12 +1,12 @@
 {
   "name": "touraxis",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "NODE_ENV=test jest --timeout=10000",
-    "start": "ts-node index.ts",
+    "start": "ts-node src/index.ts",
     "build": "tsc",
-    "dev": "ts-node-dev index.ts"
+    "dev": "ts-node-dev src/index.ts"
   },
   "jest": {
     "preset": "ts-jest",

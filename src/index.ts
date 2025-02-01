@@ -1,10 +1,10 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import userRoutes from './src/routes/userRoutes';
-import taskRoutes from './src/routes/taskRoutes';
-import { connectDB } from './src/config/database';  // Import the connection function
+import userRoutes from './routes/userRoutes';
+import taskRoutes from './routes/taskRoutes';
+import { connectDB } from './config/database';  // Import the connection function
 import schedule from 'node-schedule';
-import { checkPendingTasks } from './src/services/taskService';
+import { checkPendingTasks } from './services/taskService';
 import dotenv from 'dotenv';
 
 dotenv.config();
